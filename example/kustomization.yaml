@@ -8,7 +8,7 @@ resources:
   - oauth-rhsso-openid.yaml
   - client-secret.yaml
   - openshift-realm.yaml
-  - openshift-client.yaml
+  - openshift-client-protocol-mappers.yaml
 
 patchesJson6902:
   - target:
@@ -23,3 +23,4 @@ patchesJson6902:
       kind: OAuth
       name: cluster
     path: patch-issuer.yaml
+
